@@ -2,8 +2,45 @@ namespace TransportChallenge;
 
 public static class TransportResolver
 {
-    public static object? Resolve(string input)
+
+    public static Vehicle? Resolve(string input)
     {
-        return null;
+        
+
+        if (string.IsNullOrEmpty(input))
+        {
+            return null;
+        }
+
+        
+        string choice = input.ToLower().Trim();
+
+        if (choice == "car")
+        {
+            return new Car();
+        }
+        else if (choice == "plane")
+        {
+            return new Airplane();
+        }
+        else if (choice == "boat")
+        {
+            return new Boat();
+        }
+        else if (choice == "helicopter")
+        {
+            return new Helicopter();
+        }
+        else
+        {
+            
+            return null;
+
+
+        }
+
+
     }
+
+
 }

@@ -1,8 +1,9 @@
 namespace TransportChallenge;
 
-public class Vehicle
+public abstract class Vehicle : IDriveable
 {
-    public Vehicle()
+    public virtual string Move()
     {
+        return "Moving...";
     }
 }

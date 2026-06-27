@@ -33,6 +33,7 @@ Assert(car!.Move() == "Driving on the road.", "Car can move.");
 
 // ---------- PLANE ----------
 var plane = TransportResolver.Resolve("plane");
+//var plane = AirCraftResolver.Resolve("plane");
 
 Assert(plane is Airplane, "Resolver creates Airplane.");
 Assert(plane is Vehicle, "Airplane inherits Vehicle.");
